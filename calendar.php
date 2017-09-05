@@ -37,7 +37,7 @@ function draw_calendar($month,$year){
     $calendar.= str_repeat('<p> </p>',2);
 
     $calendar.= '</td>';
-    if($running_day == 6) {
+    if($running_day == 7) {
       $calendar.= '</tr>';
       if(($day_counter+1) != $days_in_month){
         $calendar.= '<tr class="calendar-row">';
@@ -49,11 +49,9 @@ function draw_calendar($month,$year){
   }
 
   /* finish the rest of the days in the week */
-  //if($days_in_this_week < 8) {
-    for($x = 1; $x <= (8 - $days_in_this_week); $x++) {
-      $calendar.= '<td class="calendar-day-np"> </td>';
-    }
-  //}
+  for($x = 1; $x <= (8 - $days_in_this_week); $x++) {
+    $calendar.= '<td class="calendar-day-np"> </td>';
+  }
 
   /* final row */
   $calendar.= '</tr>';
