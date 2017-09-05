@@ -8,3 +8,9 @@ To build just run `make` and open the generated index.html directly in the brows
 # Clean
 
 To build just run `make clean`.
+
+# Tasks
+
+* fix overlaping columns
+* create year+month variable
+* fix 2017/September extra empty row
